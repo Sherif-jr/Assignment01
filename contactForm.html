@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact</title>
+</head>
+
+<body>
+    <main
+        style="display: flex; align-items: center; justify-content: center; min-height: 100vh; padding-top: 40px; padding-bottom: 40px;">
+        <form method="get" action="./ThankYou.html"
+            style="display: flex; align-items: center; flex-direction: column; gap: 10px; padding: 30px; border-radius: 5px; background-color: white;">
+            <style>
+                input,
+                select,
+                button,
+                textarea {
+                    width: 100%;
+                    padding: 8px;
+                }
+            </style>
+            <input type="hidden" />
+            <input type="text" required placeholder="First name" />
+            <input type="text" required placeholder="Last name" />
+            <input type="email" required placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Repeat password" />
+            <input type="date" placeholder="Birthday" />
+            <input type="file" placeholder="User Picture" />
+            <input type="file" placeholder="User Picture" />
+            <div>
+                <input type="radio" id="male" style="width: auto;" /><label for="male">Male</label>
+                <input type="radio" id="female" style="width: auto;" /><label for="female">Female</label>
+            </div>
+            <select name="faculty" id="faculty">
+                <option value="Engineering">Engineering</option>
+                <option value="Medicine">Medicine</option>
+                <option value="option3">option3</option>
+                <option value="option4">option4</option>
+            </select>
+            <fieldset style="width: 100%;">
+                <legend>Interests:</legend>
+                <input type="checkbox" name="Interest01" id="Interest01"><label for="Interest01">Interest01</label>
+                <input type="checkbox" name="Interest02" id="Interest02"><label for="Interest02">Interest02</label>
+                <input type="checkbox" name="Interest03" id="Interest03"><label for="Interest03">Interest03</label>
+                <input type="checkbox" name="Interest04" id="Interest04"><label for="Interest04">Interest04</label>
+                <input type="checkbox" name="Interest05" id="Interest05"><label for="Interest05">Interest05</label>
+            </fieldset>
+            <textarea cols="5" rows="8" placeholder="About you"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
